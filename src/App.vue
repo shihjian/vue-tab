@@ -1,17 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <TabsWrapper> 
+    <tabSelect title="表頭1">我是表頭1</tabSelect>
+    <tabSelect title="表頭2">我是表頭2</tabSelect>
+    <tabSelect title="表頭3">我是表頭3</tabSelect>
+  </TabsWrapper>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import TabsWrapper from "./components/TabsWrapper.vue";
+import tabSelect from "./components/tabSelect.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    TabsWrapper,
+    tabSelect,
+  },
+};
 </script>
 
 <style>
@@ -19,7 +23,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
   margin-top: 60px;
 }
